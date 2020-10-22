@@ -2347,16 +2347,10 @@ input.num-product::-webkit-inner-spin-button {
 
 
 
-.about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  text-align: left;
-  max-width: 90%;
-}
-.about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
-  text-align: left;
+
+.about-descr2 {
+  width: 80%;
+  margin-top: 6%;
 }
 
 .about-descr .p-heading {
@@ -2365,6 +2359,25 @@ input.num-product::-webkit-inner-spin-button {
   text-align: left;
   max-width: 90%;
 }
+.about-descr2 .p-heading2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  text-align: left;
+  max-width: 60%;
+}
+
+.about-descr .separator {
+  max-width: 80%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.about-descr .separator2 {
+  max-width: 82%;
+  margin-bottom: 0;
+  text-align: left;
+}
+
 
 .div-img-bg .about-img img {
   width: 100%;

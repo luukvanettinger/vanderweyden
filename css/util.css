@@ -2348,6 +2348,7 @@
 */
 .bgwhite {background-color: white;}
 .bgblack {background-color: black;}
+.bggray {background-color: 	#f2f2f2;}
 
 
 
@@ -2382,6 +2383,12 @@
 	display: block;
 	overflow: hidden;
 }
+.hov-img-zoom2 {
+	display: block;
+	overflow: hidden;
+	margin-left: 10%;
+	margin-top: 5%;
+}
 .hov-img-zoom img{
 	width: 100%;
 	-webkit-transition: all 0.6s;
@@ -2389,6 +2396,16 @@
     -moz-transition: all 0.6s;
     transition: all 0.6s;
 }
+.hov-img-zoom2 img{
+	width: 75%;
+
+
+}
+.flexo {
+	display: flex;
+}
+
+
 .hov-img-zoom:hover img {
 	-webkit-transform: scale(1.1);
   	-moz-transform: scale(1.1);
