@@ -2228,7 +2228,7 @@
 */
 /* ------------------------------------ */
 .text-white {color: white;}
-.text-black {color: black;}
+.text-black {color:  #222222;}
 
 .text-hov-white:hover {color: white;}
 
@@ -2347,7 +2347,7 @@
 -----------------------------------------------------------
 */
 .bgwhite {background-color: white;}
-.bgblack {background-color: black;}
+.bgblack {background-color:  #222222;}
 .bggray {background-color: 	#f2f2f2;}
 
 
@@ -2404,6 +2404,17 @@
 .flexo {
 	display: flex;
 }
+
+@media only screen and (max-width: 800px) {
+	.flexo {
+	  display: block;
+	  margin-left: 10%;
+	  width: 100%;
+	}
+	.hov-img-zoom2 {
+		margin-left: 0%;
+	}
+  }
 
 
 .hov-img-zoom:hover img {
@@ -3249,7 +3260,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .m-text8 {
 	font-family: Montserrat-Regular;
 	font-size: 16px;
-	color: black;
+	color:  #222222;
 	text-transform: uppercase;
 }
 
@@ -3445,7 +3456,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 ///////////////////////////////////////////////////////////
 */
 .colorwhite {color: #fff;}
-.color0 {color: black}
+.color0 {color:  #222222}
 .color1 {color: #888888;}
 .color2 {color: #333333;}
 
@@ -3453,7 +3464,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 /*[  ]
 -----------------------------------------------------------
 */
-.color0-hov:hover {color: black;}
+.color0-hov:hover {color:  #222222;}
 
 
 
@@ -3744,7 +3755,7 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 /*[  ]
 -----------------------------------------------------------
 */
-.bg0-hov:hover {background-color: black}
+.bg0-hov:hover {background-color:  #222222}
 
 
 
@@ -3886,7 +3897,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 	position: absolute;
 	width: 0;
 	height: 1px;
-	background-color: black;
+	background-color:  #222222;
 	left: 0;
 	bottom: -1px;
 	-webkit-transition: all 0.3s;
@@ -3903,7 +3914,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 -----------------------------------------------------------
 */
 .eff2:active {
-	background-color: black;
+	background-color:  #222222;
 	color: white;
 }
 
@@ -3980,7 +3991,7 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 ///////////////////////////////////////////////////////////
 */
 .hov1:hover {
-    background-color: black;
+    background-color:  #222222;
   	color: white;
 }
 

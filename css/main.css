@@ -115,7 +115,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-	color: black;
+	color: #222222;
 }
 
 /* ------------------------------------ */
@@ -212,7 +212,7 @@ iframe {
     -o-animation: ball-scale infinite linear .75s;
     animation: ball-scale infinite linear .75s;
     border-radius: 100%;
-    background-color: black;
+    background-color: #222222;
 }
 
 @-webkit-keyframes ball-scale {
@@ -297,7 +297,7 @@ iframe {
   height: 40px;
   bottom: 40px;
   right: 40px;
-  background-color: black;
+  background-color: #222222;
   opacity: 0.5;
   justify-content: center;
   align-items: center;
@@ -410,12 +410,12 @@ iframe {
 }
 
 .select2-container .select2-results__option[aria-selected="true"] {
-  background-color: black;
+  background-color:  #222222;
   color: white;
 }
 
 .select2-container .select2-results__option--highlighted[aria-selected] {
-  background-color: black;
+  background-color:  #222222;
   color: white;
 }
 
@@ -675,7 +675,7 @@ iframe {
 }
 
 li.sale-noti > a {
-  color: black;
+  color:  #222222;
 }
 
 .main_menu > li:hover > a {
@@ -736,7 +736,7 @@ li.sale-noti > a {
 }
 
 .sub_menu > li:hover > a {
-  color: black;
+  color:  #222222;
   text-decoration: none;
 }
 
@@ -1056,7 +1056,7 @@ li.sale-noti > a {
 .side-menu .main-menu {margin-bottom: 0;}
 
 .item-menu-mobile {
-  background-color: black;
+  background-color:  #222222;
 }
 
 .side-menu .main-menu > li > a {
@@ -1112,7 +1112,7 @@ li.sale-noti > a {
 .side-menu .sub-menu a:hover {
   text-decoration: none;
   padding-left: 20px;
-  color: black !important;
+  color:  #222222 !important;
 }
 
 .side-menu .sub-menu {
@@ -1377,7 +1377,7 @@ li.sale-noti > a {
   font-size: 18px;
   color: white;
   position: absolute;
-  background-color: black;
+  background-color:  #222222;
   opacity: 0;
   
   top: 50%;
@@ -1400,7 +1400,7 @@ li.sale-noti > a {
 }
 
 .arrow-slick1:hover {
-  background-color: black;
+  background-color:  #222222;
 }
 
 .next-slick1 {
@@ -1571,7 +1571,7 @@ li.sale-noti > a {
 }
 
 .swal-button {
-    background-color: black;
+    background-color:  #222222;
     font-family: Montserrat-Regular;
     font-size: 15px;
     color: white;
@@ -1589,7 +1589,7 @@ li.sale-noti > a {
 }
 
 .swal-button:active {
-    background-color: black;
+    background-color:  #222222;
 }
 
 .swal-title {
@@ -1659,7 +1659,7 @@ li.sale-noti > a {
 }
 
 .block2-labelsale::before {
-  background-color: black;
+  background-color:  #222222;
   content: 'Sale';
 }
 
@@ -1732,7 +1732,7 @@ li.sale-noti > a {
 
 .block2-btn-towishlist .icon_heart {
   display: block;
-  color: black;
+  color:  #222222;
 }
 
 /* ------------------------------------ */
@@ -1919,7 +1919,7 @@ li.sale-noti > a {
 .color-filter1 {background-color: #00bbec;}
 .color-filter2 {background-color: #2c6ed5;}
 .color-filter3 {background-color: #ffa037;}
-.color-filter4 {background-color: black;}
+.color-filter4 {background-color:  #222222;}
 .color-filter5 {background-color: #a88c77;}
 .color-filter6 {background-color: #393939;}
 .color-filter7 {background-color: #cccccc;}
@@ -1937,11 +1937,11 @@ li.sale-noti > a {
 }
 
 .checkbox-color-filter:checked + .color-filter {
-  box-shadow: 0 0 0px 2px black;
-  -moz-box-shadow: 0 0 0px 2px black;
-  -webkit-box-shadow: 0 0 0px 2px black;
-  -o-box-shadow: 0 0 0px 2px black;
-  -ms-box-shadow: 0 0 0px 2px black;
+  box-shadow: 0 0 0px 2px  #222222;
+  -moz-box-shadow: 0 0 0px 2px  #222222;
+  -webkit-box-shadow: 0 0 0px 2px  #222222;
+  -o-box-shadow: 0 0 0px 2px  #222222;
+  -ms-box-shadow: 0 0 0px 2px  #222222;
 }
 
 /*[ Pagination ]
@@ -2181,7 +2181,7 @@ li.sale-noti > a {
 }
 
 .tag-item:hover {
-  border: 1px solid black;
+  border: 1px solid  #222222;
 }
 
 
@@ -2402,6 +2402,23 @@ input.num-product::-webkit-inner-spin-button {
   margin-left: 40px;
   height: 400px;
   object-fit: cover;
+}
+
+/* Backward */
+.hvr-backward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-backward:hover, .hvr-backward:focus, .hvr-backward:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
 }
 
 
