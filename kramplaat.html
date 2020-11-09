@@ -38,87 +38,26 @@
 </head>
 <body class="animsition">
 
-	<!-- Header -->
-	<header class="header1">
-		<!-- Header desktop -->
-		<div class="container-menu-header">
-			<div class="topbar">
-				<!-- bug -->
-			</div>
-
-			<div class="wrap_header">
-				<!-- Logo -->
-				<a href="index.html" class="logo">
-					<img src="images/logobrettgray.png" alt="IMG-LOGO">
-				</a>
-
-				<!-- Menu -->
-				<div class="wrap_menu">
-					<nav class="menu">
-						<ul class="main_menu">
-
-							<li>
-								<a href="./index.html">Products</a>
-							</li>
-
-
-							<li>
-								<a href="./index.html">About</a>
-							</li>
-
-							<li>
-								<a href="./index.html">Contact</a>
-							</li>
+	        <!-- Navigation-->
+			<nav class="navbar navbar-expand-lg  fixed-top navbar-inverse" id="mainNav">
+				<div class="container">
+	
+					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					   
+					</button>
+					<div class="collapse navbar-collapse" id="navbarResponsive">
+						<ul class="navbar-nav ml-auto" style="margin-right: 43.5%; margin-top: 3%;">
+							<div class="logo">
+								<a href="index.html"><img src="images/logobrettgray.png" alt="logo"></a>
+							  </div>
+							<li class="nav-item" style="padding-right: 20%;"><a class="nav-link js-scroll-trigger" href="index.html">Products</a></li>
+							<li class="nav-item" style="padding-right: 20%;"><a class="nav-link js-scroll-trigger" href="index.html">About</a></li>
+							<li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Contact</a></li>
 						</ul>
-					</nav>
+					</div>
 				</div>
-			</div>
-		</div>
-
-		<!-- Header Mobile -->
-		<div class="wrap_header_mobile">
-			<!-- Logo moblie -->
-			<a href="index.html" class="logo-mobile">
-				<img src="images/logobrett.png" alt="IMG-LOGO">
-			</a>
-
-			<!-- Button show menu -->
-			<div class="btn-show-menu">
-
-
-				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Menu Mobile -->
-		<div class="wrap-side-menu" >
-			<nav class="side-menu">
-				<ul class="main-menu">
-
-
-
-
-
-					<li class="item-menu-mobile">
-						<a href="index.html">Products</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="index.html">About</a>
-					</li>
-
-					<li class="item-menu-mobile">
-						<a href="index.html">Contact</a>
-					</li>
-				</ul>
 			</nav>
-		</div>
-	</header>
-
+			<br><br><br><br>
 	<!-- Banner -->
 	<section class="flexo" id="products">
 					<!-- img -->
@@ -145,7 +84,7 @@
 						Vraag vrijblijven een offerte op bij Brett@steigertrading.nl.
 						<br><br>
 						<a href="./index.html">
-						<img class="hvr-backward" style="width: 5%; margin-right: 3%; margin-bottom: 1%;" src="images/left-arrow.png" alt="icon">
+						<img class="hvr-backward" style="width: 5%; margin-right: 3%; margin-bottom: 1%;" src="images/arrow_left.png" alt="icon">
 						</a>
                     </p>
                 </div>
@@ -154,7 +93,11 @@
 	</section>
     <br><br><br><br><br><br>
 	<!-- Footer -->
-	<footer id="footer" class="banner bggray p-t-40 p-b-40">
+	<footer id="footer" class="banner bggray p-t-40 p-b-40" style="background-image: url(images/marblebg5.jpg);  
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; ">
 		<div class="flex-w p-b-90">
 			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
 
@@ -301,6 +244,16 @@
 
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+
+	<script>
+		$(window).scroll(function() {
+		  if ($(document).scrollTop() > 40) {
+			$('nav').addClass('transparent');
+		  } else {
+			$('nav').removeClass('transparent');
+		  }
+		});
+			</script>
 
 </body>
 </html>
