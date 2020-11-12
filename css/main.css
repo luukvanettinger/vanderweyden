@@ -109,10 +109,6 @@ iframe {
 
 
 /* ------------------------------------ */
-.container {
-	max-width: 1200px;
-}
-
 .slick-slide {
   outline: none !important;
 }
