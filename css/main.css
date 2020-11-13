@@ -224,7 +224,7 @@ iframe {
   height: 40px;
   bottom: 40px;
   right: 40px;
-  opacity: 0.5;
+  opacity: 1;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -232,6 +232,7 @@ iframe {
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  
 }
 
 .symbol-btn-back-to-top {
@@ -1263,12 +1264,13 @@ li.sale-noti > a {
   position: relative;
 }
 
-.item-slick1 {
+.frontpage {
   height: 100vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
 @media (max-width: 600px) {
@@ -1347,7 +1349,7 @@ li.sale-noti > a {
     font-size: 16px;
   }
 
-  .item-slick1 {
+  .frontpage {
     height: 800px;
   }
 
@@ -1356,12 +1358,6 @@ li.sale-noti > a {
   }
 }
 
-/*[ rs1-slick1 ]
------------------------------------------------------------
-*/
-.rs1-slick1 .item-slick1 {
-  height: 100vh;
-}
 
 
 
