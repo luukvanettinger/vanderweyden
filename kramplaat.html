@@ -11,6 +11,8 @@
 		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 		<!-- page load animation -->
 		<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+		<!-- All fade in animations -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!--===============================================================================================-->
 		<link rel="stylesheet" type="text/css" href="css/util.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -41,12 +43,12 @@
 	<!-- Banner -->
 	<section class="flexo" id="products">
 					<!-- img -->
-					<div class="hov-img-zoom2">
+					<div data-aos="fade-up" class="hov-img-zoom2">
 						<img src="images/kramplaat.jpg" alt="IMG-BENNER">
 					</div>
 		
 
-				<div class="about-descr2">
+				<div class="about-descr2" data-aos="fade-up">
                     <p class="p-heading2"> 
                         Kramplaat G35
                     </p>
@@ -73,11 +75,10 @@
 	</section>
     <br><br><br><br><br><br>
 	<!-- Footer -->
-	<footer id="footer" class="banner bggray p-t-40 p-b-40" style="background-image: url(images/marblebg5.jpg);  
+	<footer id="footer" class="banner bggray p-t-40 p-b-40" style="background-image: url(images/marblebg1.jpg);  
 	background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover; ">
+	background-repeat: no-repeat;">
 		<div class="flex-w p-b-90">
 			<div class="w-size6 p-t-30 p-l-15 p-r-15 respon3">
 
@@ -187,6 +188,11 @@
 <!--===============================================================================================-->
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+  		AOS.init();
+	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 

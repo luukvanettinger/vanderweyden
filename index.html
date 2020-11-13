@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/logobrett.png"/>
+	<link rel="icon" type="image/png" href="images/logobrettgray.png"/>
 <!--===============================================================================================-->
 	<!-- bootstrap styling -->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -13,6 +13,8 @@
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 	<!-- Start screen title animation -->
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<!-- All fade in animations -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -41,7 +43,7 @@
 	<section class="slide1">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1 bg" style="background-image: url(images/bgimg.jpg);  
+				<div class="item-slick1 bg" style="background-image: url(images/bgimg2.jpg);  
  	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;">
@@ -66,11 +68,11 @@
 		<div class="container">
 			<div id="products" class="sec-title p-b-60">
 				<br><br>
-				<h3 class="m-text5 t-center">
+				<h3 data-aos="fade-up" class="m-text5 t-center">
 					Products
 				</h3>
 			</div>
-			<div class="row">
+			<div data-aos="slide-up" class="row">
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 
 
@@ -145,7 +147,7 @@
 
         
         <div class="col-lg-4 ">
-          <div class="div-img-bg">
+          <div data-aos="fade-up" class="div-img-bg">
             <div class="about-img">
               <img src="images/brett.jpg" class="img-responsive" alt="me">
             </div>
@@ -153,7 +155,7 @@
         </div>
 
         <div class="col-lg-7">
-          <div class="about-descr">
+          <div class="about-descr" data-aos="fade-up">
 
             <p class="p-heading"> Over ons
 			</p>
@@ -177,7 +179,7 @@
 				</div>
 			</div>
 			<br><br><br><br>
-			<div class="flex-w p-l-15 p-r-15" >
+			<div class="flex-w p-l-15 p-r-15" data-aos="fade-up" >
 				<div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
 					<h4 class="m-text12 t-center">
 						Levering wereldwijd
@@ -321,7 +323,10 @@
 	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="js/slick-custom.js"></script>
 <!--===============================================================================================-->
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
