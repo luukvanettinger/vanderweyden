@@ -2341,13 +2341,20 @@ nav.navbar{
   transition: all 0.4s ease;
 }
 
-.navbar-inverse {
-   background-color: rgba(0,0,0,0);
-   border-color: #080808;
-}
+
 
 nav.navbar.transparent {
  background-color:white;
+}
+
+@media (max-width: 680px) {
+  .navbar {
+    height: 100px;
+  }
+  .logo {
+    margin-top: 0%;
+    margin-left: -10%;
+  }
 }
 
 
