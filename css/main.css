@@ -2440,6 +2440,10 @@ nav {
     margin-left: -12%;
   }
 
+  .hvr-upward {
+    opacity: 0;
+  }
+
 
   .hamburger {
     position: absolute;
@@ -2487,6 +2491,27 @@ nav {
   }
   li.fade {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bigScreen {
+    display:none;
+  }
+  .smallScreen {
+
+  }
+  .test {
+    display: none
+  }
+}
+
+@media (min-width: 1001px) {
+  .bigScreen {
+
+  }
+  .smallScreen {
+    display:none;
   }
 }
 

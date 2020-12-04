@@ -46,11 +46,16 @@
 			<div class="logo">
 				<a href="index.html"><img src="images/logobrettgray.png" alt="logo"></a>
 			  </div>
-			<ul class="nav-links">
-			  <li><a href="#products">About</a></li>
-			  <li><a href="#about">Contact</a></li>
-			  <li><a href="#footer">Projects</a></li>
+			<ul class="nav-links action smallScreen">
+			  <li><a href="#products">Producten</a></li>
+			  <li><a href="#about">Over</a></li>
+			  <li><a href="#footer">Contact</a></li>
 			</ul>
+			<ul class="nav-links bigScreen">
+				<li><a href="#products">Producten</a></li>
+				<li><a href="#about">Over</a></li>
+				<li><a href="#footer">Contact</a></li>
+			  </ul>
 		  </nav>
 		
 
@@ -84,7 +89,7 @@
 
 					<!-- block1 -->
 
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
+					<div class="test block1 hov-img-zoom pos-relative m-b-30">
 						<img style="opacity: 0.4;" src="images/marmertest3.jpg" alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
@@ -110,7 +115,7 @@
 
 				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
 
-					<div class="block1 hov-img-zoom pos-relative m-b-30">
+					<div class="test block1 hov-img-zoom pos-relative m-b-30">
 						<img style="opacity: 0.2;" src="images/testmarmer2.jpg" alt="IMG-BENNER">
 
 						<div class="block1-wrapbtn w-size2">
@@ -319,8 +324,16 @@
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
+const action = document.querySelector(".action")
 
 hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  links.forEach(link => {
+    link.classList.toggle("fade");
+  });
+});
+
+action.addEventListener("click", () => {
   navLinks.classList.toggle("open");
   links.forEach(link => {
     link.classList.toggle("fade");
