@@ -22,7 +22,7 @@
 </head>
 <body>
         <!-- Navigation
-        <nav class="navbar navbar-expand-lg  fixed-top navbar-inverse" >
+        <!-- <nav class="navbar navbar-expand-lg  fixed-top navbar-inverse" >
             <div class="container">
                 <div class="navbar-collapse">
                     <ul class="navbar-nav ml-auto" style="margin-right: 43.5%; margin-top: 3%;">
@@ -37,7 +37,7 @@
             </div>
 		</nav> -->
 
-		<nav>
+		<nav class="bgg transition">
 			<div class="hamburger">
 			  <div class="line"></div>
 			  <div class="line"></div>
@@ -339,6 +339,30 @@ action.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
+</script>
+<script>
+$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  
+	if ($(window).scrollTop() > 70 ){
+    
+ 		$('.bgg').addClass('show');
+    
+  } else {
+    
+    $('.bgg').removeClass('show');
+    
+ 	};   	
+});
+
+$('.scroll').on('click', function(e){		
+		e.preventDefault()
+    
+  $('html, body').animate({
+      scrollTop : $(this.hash).offset().top
+    }, 1500);
+});
+
 </script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
