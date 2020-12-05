@@ -2465,11 +2465,15 @@ nav {
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 0.5s ease-out;
     pointer-events: none;
+    opacity: 1;
   }
+
+
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
+    opacity: 1;
   }
   .landing {
     flex-direction: column;
@@ -2504,6 +2508,9 @@ nav {
   .test {
     display: none
   }
+  .toTheRight {
+    margin-left: 13%;
+  }
 }
 
 @media (min-width: 1001px) {
@@ -2536,6 +2543,7 @@ nav {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
+
 
 
 

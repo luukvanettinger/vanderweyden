@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
-		<link rel="icon" type="image/png" href="images/logobrett.png"/>
+		<link rel="icon" type="image/png" href="images/favicon2.ico"/>
 	<!--===============================================================================================-->
 		<!-- bootstrap styling -->
 		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -22,36 +22,55 @@
 	</head>
 <body class="animsition">
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg  fixed-top navbar-inverse" >
-            <div class="container">
-                <div class="navbar-collapse">
-                    <ul class="navbar-nav ml-auto" style="margin-right: 43.5%; margin-top: 3%;">
-						<div class="logo">
-							<a href="index.html"><img src="images/logobrettgray.png" alt="logo"></a>
-						  </div>
-                        <li class="nav-item" style="margin-right: 20%;"><a class="nav-link js-scroll-trigger" style="font-weight: 500;" href="#products">Producten</a></li>
-                        <li class="nav-item" style="margin-right: 20%;"><a class="nav-link js-scroll-trigger" href="#about">Over</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#footer">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-		</nav>
+	<nav class="bgg transition">
+		<div class="hamburger bgg transition">
+		  <div class="line"></div>
+		  <div class="line"></div>
+		  <div class="line"></div>
+		</div>
+		<div class="logo">
+			<a href="index.html"><img src="images/logobrettgray.png" alt="logo"></a>
+		  </div>
+		<ul class="nav-links nav-links2 action smallScreen">
+		  <li><a style="  font-family: 'Playfair Display', serif;
+			font-size: 28px;
+			color: gray" href="index.html">Producten</a></li>
+		  <li><a style="  font-family: 'Playfair Display', serif;
+			font-size: 28px;
+			color: gray" href="index.html">Over</a></li>
+		  <li><a style="  font-family: 'Playfair Display', serif;
+			font-size: 28px;
+			color: gray" href="index.html">Contact</a></li>
+		</ul>
+		<ul style="margin-left: 28%" class="nav-links bigScreen">
+			<li><a style="  font-family: 'Playfair Display', serif;
+				font-size: 22px;
+				color: gray" href="#products">Producten</a></li>
+			<li><a style="  font-family: 'Playfair Display', serif;
+				font-size: 22px;
+				margin-left: -100%;
+				color: gray" href="#about">Over</a></li>
+			<li><a style="  font-family: 'Playfair Display', serif;
+				font-size: 22px;
+				margin-left: -120%;
+				color: gray" href="#footer">Contact</a></li>
+		  </ul>
+	  </nav>
 			<br><br><br><br>
 	<!-- Banner -->
 	<section class="flexo" id="products">
 					<!-- img -->
 					<div data-aos="fade-up" class="hov-img-zoom2">
-						<img src="images/kramplaat.jpg" alt="IMG-BENNER">
+						<img class="toTheRight"  src="images/kramplaat.jpg" alt="IMG-BENNER">
 					</div>
 		
 
 				<div class="about-descr2" data-aos="fade-up">
-                    <p class="p-heading2"> 
+                    <p  class="p-heading2 toTheRight"> 
                         Kramplaat G35
                     </p>
                     <br>
-					<p style="width: 75%;"class="separator2">
+					<p  class="toTheRight" style="width: 75%;"class="separator2">
 						Maakt u veelvuldig gebruik van steigerhout en is het u vaker overkomen dat planken onbruikbaar zijn geworden als gevolg van scheuren in de kopse kant? Hiervoor bieden wij een oplossing: de kramplaat. Een kramplaat is een gegalvaniseerde stalen plaat die in de kopse kant van de (steiger)plank wordt geperst. Dit gebeurt onder hoge druk waardoor deze niet meer los komt en het hout niet meer kan scheuren. Het is een veilige en duurzame oplossing om de leeftijd van uw (steiger)planken te verlengen. 
 						<br><br>
 						<img style="width: 1%; margin-right: 3%; margin-left: 2.5%; margin-bottom: 1%;" src="images/dot.png" alt="icon">
@@ -189,6 +208,51 @@
 	<script>
   		AOS.init();
 	</script>
+	<script>
+
+		const hamburger = document.querySelector(".hamburger");
+		const navLinks = document.querySelector(".nav-links");
+		const links = document.querySelectorAll(".nav-links li");
+		const action = document.querySelector(".action")
+		
+		hamburger.addEventListener("click", () => {
+		  navLinks.classList.toggle("open");
+		  links.forEach(link => {
+			link.classList.toggle("fade");
+		  });
+		});
+		
+		action.addEventListener("click", () => {
+		  navLinks.classList.toggle("open");
+		  links.forEach(link => {
+			link.classList.toggle("fade");
+		  });
+		});
+		</script>
+		<script>
+		$(window).scroll(function() {
+		// 100 = The point you would like to fade the nav in.
+		  
+			if ($(window).scrollTop() > 70 ){
+			
+				 $('.bgg').addClass('show');
+			
+		  } else {
+			
+			$('.bgg').removeClass('show');
+			
+			 };   	
+		});
+		
+		$('.scroll').on('click', function(e){		
+				e.preventDefault()
+			
+		  $('html, body').animate({
+			  scrollTop : $(this.hash).offset().top
+			}, 1500);
+		});
+		
+		</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 

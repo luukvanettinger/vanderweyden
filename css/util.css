@@ -2407,7 +2407,7 @@
 
 @media only screen and (max-width: 800px) {
 	.flexo {
-	  display: block;
+	  display: initial;
 	  margin-left: 10%;
 	  width: 100%;
 	}
