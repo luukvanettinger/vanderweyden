@@ -2407,12 +2407,9 @@
 
 @media only screen and (max-width: 800px) {
 	.flexo {
-	  display: initial;
+	  display: contents;
 	  margin-left: 10%;
 	  width: 100%;
-	}
-	.hov-img-zoom2 {
-		margin-left: 0%;
 	}
   }
 

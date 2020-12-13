@@ -23,24 +23,24 @@
 <body class="animsition">
 
 	<nav class="bgg transition">
-		<div class="hamburger bgg transition">
-		  <div class="line"></div>
-		  <div class="line"></div>
-		  <div class="line"></div>
+		<div id="nav-icon4" class="hamburger bgg transition">
+			<span></span>
+			<span></span>
+			<span></span>
 		</div>
 		<div class="logo">
 			<a href="index.html"><img src="images/logobrettgray.png" alt="logo"></a>
 		  </div>
-		<ul class="nav-links nav-links2 action smallScreen">
+		<ul id="cross" class="nav-links nav-links2 action smallScreen">
 		  <li><a style="  font-family: 'Playfair Display', serif;
 			font-size: 28px;
-			color: gray" href="index.html">Producten</a></li>
+			color: gray" href="#products">Producten</a></li>
 		  <li><a style="  font-family: 'Playfair Display', serif;
 			font-size: 28px;
-			color: gray" href="index.html">Over</a></li>
+			color: gray" href="#about">Over</a></li>
 		  <li><a style="  font-family: 'Playfair Display', serif;
 			font-size: 28px;
-			color: gray" href="index.html">Contact</a></li>
+			color: gray" href="#footer">Contact</a></li>
 		</ul>
 		<ul style="margin-left: 28%" class="nav-links bigScreen">
 			<li><a style="  font-family: 'Playfair Display', serif;
@@ -61,7 +61,7 @@
 	<section class="flexo" id="products">
 					<!-- img -->
 					<div data-aos="fade-up" class="hov-img-zoom2">
-						<img class="toTheRight"  src="images/kramplaat.jpg" alt="IMG-BENNER">
+						<img src="images/kramplaat.jpg" alt="IMG-BENNER">
 					</div>
 		
 
@@ -252,6 +252,13 @@
 			}, 1500);
 		});
 		
+		</script>
+		<script>
+			$(document).ready(function(){
+			$('#cross, #nav-icon4').click(function(){
+				$('#nav-icon4').toggleClass('open');
+			});
+		});
 		</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
